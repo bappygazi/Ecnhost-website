@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Lato | Poppins google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- font-awesome v4.7 icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>Ecnhost Website</title>
+  </head>
+
+  <body>
+    <!-- contact-bar part html start -->
+    <section id="contact-bar" class="py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-md-6">
+            <div class="contact-bar-content d-none d-md-flex">
+              <div class="contact-bar-text me-3 me-lg-3">
+                <a href="tel:0123456890" class="text-white d-flex align-items-center"><i class="fa fa-phone me-2"></i> (480) 555-0103</a>
+              </div>
+              <div class="contact-bar-text ms-lg-4">
+                <a href="mailto:contacthr@ecnhost.com" class="text-white d-flex align-items-center"><i class="fa fa-envelope-o me-2"></i> contacthr@ecnhost.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-md-6 ms-auto">
+            <div class="lang-support-login d-flex align-items-center justify-content-end">
+              <div class="language me-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Eng</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                </select>
+              </div>
+              <div class="support-text mx-3"><a class="fw-normal text-white" href="#">Support</a></div>
+              <div class="user-login ms-3">
+                <button class="btn fw-semiBold text-white rounded-pill">User Log In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-bar part html start -->
+    <!-- navbar part html start -->
+    <section id="menu-navbar" class="navbar py-3 navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid" src="./images/logo.png" alt="logo.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-3"><a class="nav-link fw-semiBold" href="./index.html">Home</a></li>
+            <li class="nav-item px-3 dropdown">
+              <a class="nav-link fw-semiBold dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Items 1</a></li>
+                <li><a class="dropdown-item" href="#">Items 2</a></li>
+                <li><a class="dropdown-item" href="#">Items 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-3"><a class="nav-link fw-semiBold" href="#">About Us</a></li>
+            <li class="nav-item px-3"><a class="nav-link fw-semiBold" href="#">Partnership</a></li>
+            <li class="nav-item ps-3"><a class="nav-link fw-semiBold" href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- navbar part html end -->
+
+    <!-- dedicated-servers part html end -->
+    <section id="dedicated-servers">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-shape position-relative"></div>
+            <div class="row">
+              <div class="col-lg-8 col-11 m-auto">
+                <div class="header-text text-center pb-0 pb-md-5">
+                  <h3 class="display-5 fw-semiBold mb-3 lh-base">Fully Managed <span>Dedicated Server</span></h3>
+                  <p class="fs-6 pt-2 fw-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text text-center pt-5">
+              <h3 class="display-5 fw-semiBold mb-3 lh-base"><span>Dedicated Servers</span></h3>
+              <p class="fs-6 pt-2 fw-normal">Sort a list of servers by clicking on the column header</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="dedicated-servers-table pt-4">
+              <table class="table table-bordered border-0 mb-0">
+                <tbody>
+                  <tr class="table-tr border-0 bg-white">
+                    <td class="py-3 px-4 table-title fw-semiBold fs-6 border-start-0 border-radius-left">Image</td>
+                    <td class="py-3 px-4 table-title fw-semiBold fs-6">Name</td>
+                    <td class="py-3 px-4 table-title fw-semiBold fs-6 d-none d-md-table-cell d-lg-table-cell">Memory</td>
+                    <td class="py-3 px-4 table-title fw-semiBold fs-6 d-none d-lg-table-cell">CPU Speed</td>
+                    <td class="py-3 px-4 table-title fw-semiBold fs-6 d-none d-lg-table-cell">Storage</td>
+                    <td class="py-3 px-4 table-title fw-semiBold fs-6 border-end-0">Traffic</td>
+                    <td class="py-3 px-4 table-title fw-semiBold fs-6 border-end-0 border-start-0 border-radius-right"></td>
+                  </tr>
+                  <tr class="table-tr border-0 bg-white">
+                    <td class="py-3 px-4 border-start-0 accessories-name"><img src="./images/dedicated-servers-processor-intel.png" alt="processor-intel" class="img-fluid" /></td>
+                    <td class="py-3 px-4 abilities-text">Intel Xeon E3 1245 V5</td>
+                    <td class="py-3 px-4 abilities-text d-none d-md-table-cell d-lg-table-cell">16 GB DDR4 ECC</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">3.5GHz/3.9GHz</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">2x500 GB SSD</td>
+                    <td class="py-3 px-4 abilities-text border-end-0">10TB*</td>
+                    <td class="py-3 px-4 abilities-text border-end-0 border-start-0"><button class="btn border px-3 fw-semiBold">Configure</button></td>
+                  </tr>
+                  <tr class="table-tr border-end-0 border-start-0 border-bottom-0 bg-white">
+                    <td class="py-3 px-4 border-start-0 accessories-name"><img src="./images/dedicated-servers-processor-intel.png" alt="processor-intel" class="img-fluid" /></td>
+                    <td class="py-3 px-4 abilities-text">Intel Xeon E2136 V6</td>
+                    <td class="py-3 px-4 abilities-text d-none d-md-table-cell d-lg-table-cell">32 GB DDR4 ECC</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">3.3 x 4.5 GHz</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">2x500 GB SSD</td>
+                    <td class="py-3 px-4 abilities-text border-end-0">20TB*</td>
+                    <td class="py-3 px-4 abilities-text border-end-0 border-start-0"><button class="btn border px-3 fw-semiBold">Configure</button></td>
+                  </tr>
+                  <tr class="table-tr border-end-0 border-start-0 border-bottom-0 bg-white">
+                    <td class="py-3 px-4 border-start-0 accessories-name"><img src="./images/dedicated-servers-processor-intel.png" alt="processor-intel" class="img-fluid" /></td>
+                    <td class="py-3 px-4 abilities-text">Intel Xeon E2288G</td>
+                    <td class="py-3 px-4 abilities-text d-none d-md-table-cell d-lg-table-cell">64 GB DDR4 ECC</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">3.7 x5 GHz</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">2x500 GB SSD</td>
+                    <td class="py-3 px-4 abilities-text border-end-0">100TB*</td>
+                    <td class="py-3 px-4 abilities-text border-end-0 border-start-0"><button class="btn border px-3 fw-semiBold">Configure</button></td>
+                  </tr>
+                  <tr class="table-tr border-end-0 border-start-0 border-bottom-0 bg-white">
+                    <td class="py-3 px-4 border-start-0 accessories-name"><img src="./images/dedicated-servers-processor-amd.png" alt="processor-intel" class="img-fluid" /></td>
+                    <td class="py-3 px-4 abilities-text">AMD EPYC 7371P</td>
+                    <td class="py-3 px-4 abilities-text d-none d-md-table-cell d-lg-table-cell">128 GB DDR4 ECC</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">2.4 x 2.9 GHz</td>
+                    <td class="py-3 px-4 abilities-text d-none d-lg-table-cell">2x500 GB SSD</td>
+                    <td class="py-3 px-4 abilities-text border-end-0">200TB*</td>
+                    <td class="py-3 px-4 abilities-text border-end-0 border-start-0"><button class="btn border px-3 fw-semiBold">Configure</button></td>
+                  </tr>
+                  <tr class="table-tr border-end-0 border-start-0 border-bottom-0 bg-white">
+                    <td class="py-3 px-4 border-start-0 accessories-name"><img src="./images/dedicated-servers-processor-amd.png" alt="processor-intel" class="img-fluid" /></td>
+                    <td class="py-3 px-4 abilities-text">AMD EPYC 7371P</td>
+                    <td class="py-3 d-none d-md-table-cell d-lg-table-cell px-4 abilities-text">128 GB DDR4 ECC</td>
+                    <td class="py-3 d-none d-lg-table-cell px-4 abilities-text">2.4 x 2.9 GHz</td>
+                    <td class="py-3 d-none d-lg-table-cell px-4 abilities-text">2x500 GB SSD</td>
+                    <td class="py-3 px-4 abilities-text border-end-0">200TB*</td>
+                    <td class="py-3 px-4 abilities-text border-end-0 border-start-0"><button class="btn border px-3 fw-semiBold">Configure</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dedicated-servers part html end -->
+
+    <!-- dedicated-servers-brand part html start -->
+    <section id="dedicated-servers-brand">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text text-center pb-5">
+              <h3 class="fs-1 mb-3 fw-semiBold">Dedicated <span>Servers</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg col-md-4 m-auto">
+            <div class="servers-brand-item text-center mb-4">
+              <div class="servers-brand-icon bg-white m-auto d-flex align-items-center justify-content-center">
+                <img src="./images/dedicated-servers-brand.png" alt="dedicated-servers-brand.png" class="img-fluid" />
+              </div>
+              <div class="servers-brand-item-text pt-4">
+                <span class="fs-6 fw-normal">Gentoo</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg col-md-4 m-auto">
+            <div class="servers-brand-item text-center mb-4">
+              <div class="servers-brand-icon bg-white m-auto d-flex align-items-center justify-content-center">
+                <img src="./images/dedicated-servers-brand2.png" alt="dedicated-servers-brand.png" class="img-fluid" />
+              </div>
+              <div class="servers-brand-item-text pt-4">
+                <span class="fs-6 fw-normal">Open B SD</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg col-md-4 m-auto">
+            <div class="servers-brand-item text-center mb-4">
+              <div class="servers-brand-icon bg-white m-auto d-flex align-items-center justify-content-center">
+                <img src="./images/dedicated-servers-brand3.png" alt="dedicated-servers-brand.png" class="img-fluid" />
+              </div>
+              <div class="servers-brand-item-text pt-4">
+                <span class="fs-6 fw-normal">Ubuntu</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg col-md-4 m-auto">
+            <div class="servers-brand-item text-center mb-4">
+              <div class="servers-brand-icon bg-white m-auto d-flex align-items-center justify-content-center">
+                <img src="./images/dedicated-servers-brand4.png" alt="dedicated-servers-brand.png" class="img-fluid" />
+              </div>
+              <div class="servers-brand-item-text pt-4">
+                <span class="fs-6 fw-normal">Windows Server</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg col-md-4 m-auto">
+            <div class="servers-brand-item text-center mb-4">
+              <div class="servers-brand-icon bg-white m-auto d-flex align-items-center justify-content-center">
+                <img src="./images/dedicated-servers-brand5.png" alt="dedicated-servers-brand.png" class="img-fluid" />
+              </div>
+              <div class="servers-brand-item-text pt-4">
+                <span class="fs-6 fw-normal">Open SU SE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dedicated-servers-brand part html end -->
+
+    <!--virtual-servers part html start -->
+    <section id="virtual-servers">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text text-center pb-5">
+              <h3 class="fs-1 mb-3 fw-semiBold">All <span>Virtual Servers</span> Included</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="virtual-servers-item text-center p-3">
+              <div class="virtual-servers-item-icon mb-3">
+                <img src="./images/virtual-servers-icon.png" alt="virtual-servers-icon.png" class="img-fluid" />
+              </div>
+              <div class="virtual-servers-item-text">
+                <h5 class="mb-2 fw-semiBold">Solid Security</h5>
+                <p class="fs-6 lh-base">We harden each VPS by our security experts and guard with a security protocol tailored to your environment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="virtual-servers-item text-center p-3">
+              <div class="virtual-servers-item-icon mb-3">
+                <img src="./images/virtual-servers-icon2.png" alt="virtual-servers-icon.png" class="img-fluid" />
+              </div>
+              <div class="virtual-servers-item-text">
+                <h5 class="mb-2 fw-semiBold">Fully Managed</h5>
+                <p class="fs-6 lh-base">We run your server so you can run your business. This means that we provide full support and management for your server.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="virtual-servers-item text-center p-3">
+              <div class="virtual-servers-item-icon mb-3">
+                <img src="./images/virtual-servers-icon3.png" alt="virtual-servers-icon.png" class="img-fluid" />
+              </div>
+              <div class="virtual-servers-item-text">
+                <h5 class="mb-2 fw-semiBold">Dedicated IP</h5>
+                <p class="fs-6 lh-base">All our Virtual Servers come with a Dedicated IP and Configured and included Windows license. You need to select Windows Version in order form.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="virtual-servers-item text-center p-3">
+              <div class="virtual-servers-item-icon mb-3">
+                <img src="./images/virtual-servers-icon4.png" alt="virtual-servers-icon.png" class="img-fluid" />
+              </div>
+              <div class="virtual-servers-item-text">
+                <h5 class="mb-2 fw-semiBold">Full Root/RDP Access</h5>
+                <p class="fs-6 lh-base">The full power of the server! Having root access to the server gives you the ability to take full control of your server.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--virtual-servers part html end -->
+
+    <!-- features part html start -->
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text text-center pb-3">
+              <h3 class="fs-1 mb-3 fw-semiBold">What Makes ECNHOST <span>Special</span>?</h3>
+              <p class="fs-6 pt-2 fw-normal">We Have the Features & Service You Deserve!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg-10 col-md-12 m-auto">
+            <div class="row justify-content-lg-between">
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mb-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">99.9% Uptime Guarantee</h4>
+                    <p class="fw-nomral fs-6 lh-base">We understand the uptime importance. We pledge to deliver in excess of 99.9% uptime, each and every month.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mb-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon2.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">30 Days Money-back Guarantee</h4>
+                    <p class="fw-nomral fs-6 lh-base">We have 30 Days moneyback guarantee, so you can try our service without any risk. We'll refund you if you're not satisfied.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mt-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon3.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">Free 24/7 Professional Support</h4>
+                    <p class="fw-nomral fs-6 lh-base">Our customer support is 24x7x365. With your hosting package you also gain 24x7 accesses to our expert support team.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mt-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon4.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">Free SSL Certificate</h4>
+                    <p class="fw-nomral fs-6 lh-base">We are offering Unlimited SSL for Free. Easy to install/auto-renewed Let's Encrypt SSL certificates can help secure your websites.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features part html end -->
+
+    <!-- footer part html start -->
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col-lg-2 mb-4 mb-lg-0 col-6">
+            <div class="footer-logo-address text-white">
+              <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="./images/white-logo.png" alt="logo.png" />
+              </a>
+              <p class="fw-normal mt-3">Experience the next level SSD hosting which built for speed!</p>
+              <h5 class="fw-semiBold">Our Address</h5>
+              <p class="fw-normal mt-3">ECNHOST, LLC 8 The Green Ste R Dover, DE 1990 +13022195558</p>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0 col-6 offset-lg-1">
+            <div class="footer-list text-white">
+              <h5 class="mb-3">Product & Solution</h5>
+              <ul>
+                <li class="py-1"><a class="text-white py-1" href="#">Web Hosting</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Reseller Hosting</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Windows VPS</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Dedicated Server</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Domain Registration</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Domain Transfer</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Business Email</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">G-Suite</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0 col-6">
+            <div class="footer-content text-white">
+              <h5 class="mb-3">Company</h5>
+              <ul>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">About Us</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Our Beckbenchers</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Our Blog</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Contact Us</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">knowledgebase</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Service Status</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Support Centerl</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Bank Payment</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0 col-6">
+            <div class="footer-content text-white">
+              <h5>Subscribe Out Newsletter</h5>
+              <p class="fw-normal">Subscribe for new offers and updates.</p>
+              <form>
+                <div class="sub-newsletter position-relative mb-4">
+                  <input class="form-control me-2" type="search" placeholder="Enter your email address" aria-label="Search" />
+                  <button class="btn position-absolute text-white" type="submit">Subscribe</button>
+                </div>
+              </form>
+              <h5>Connect With Us</h5>
+              <p class="fw-normal">Follow us on facebook, twitter and linkedin</p>
+              <div class="social-media-icon">
+                <a class="me-1" href="#"><i class="fa fa-facebook text-center"></i></a>
+                <a class="mx-1" href="#"><i class="fa fa-twitter text-center"></i></a>
+                <a class="ms-1" href="#"><i class="fa fa-linkedin text-center"></i></a>
+              </div>
+              <div class="payment-methods pt-3">
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-visa.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-paypal.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-masterCard.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-discoverNetwork.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-amex.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-bitcoin.png" alt="payment.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-6">
+            <div class="footer-copyright text-white"><small class="fw-normal">© 2021 ECNHOST LLC, All Rights Reserved</small></div>
+          </div>
+          <div class="col-6">
+            <div class="footer-copyright text-end text-white">
+              <a class="text-white pe-2 pe-md-4 fw-normal" href="#">Terms of Service</a>
+              <a class="text-white ps-2 ps-md-4 fw-normal" href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer part html end -->
+    <!-- jquery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

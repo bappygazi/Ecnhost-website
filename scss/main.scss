@@ -1,0 +1,1191 @@
+/*common part css*/
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+// custom scss//
+.fw-medium {
+  font-weight: 500;
+}
+.fw-semiBold {
+  font-weight: 600;
+}
+.header-shape {
+  &::after {
+    left: 0;
+    top: -40px;
+    width: 220px;
+    content: "";
+    height: 175px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/left-yellow-shape.png);
+  }
+  &::before {
+    right: 0;
+    top: -45px;
+    width: 220px;
+    content: "";
+    height: 175px;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/right-yellow-shape.png);
+  }
+}
+.header-text {
+  font-family: "Poppins", sans-serif;
+  h3 {
+    color: #333333;
+    span {
+      position: relative;
+      &::after {
+        left: 0;
+        top: 55px;
+        width: 100%;
+        content: "";
+        height: 10px;
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/header-underline-shape.png);
+      }
+    }
+  }
+  p {
+    color: #6f7487;
+  }
+}
+// contact part scss //
+#contact-bar {
+  background-color: #333333;
+  font-family: "Poppins", sans-serif;
+  .contact {
+    .contact-text {
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  .lang-support-login {
+    .language {
+      .form-select {
+        .flag-icon {
+          width: 25px;
+          height: 16px;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          &.flag-icon-us {
+            background: url(../images/usa-flag.png);
+          }
+        }
+      }
+    }
+    #gender {
+      option[value="1"] {
+        background-image: url(../images/usa-flag.png);
+      }
+    }
+    .support-text {
+      a {
+        font-size: 14px;
+      }
+    }
+    .user-login {
+      .btn {
+        width: 135px;
+        height: 42px;
+        font-size: 16px;
+        background-color: #30ab5e;
+      }
+    }
+  }
+}
+// navbar part scss //
+#menu-navbar {
+  background: #fbfdfc;
+  font-family: "Poppins", sans-serif;
+  &.sticky-top {
+    top: -1px !important;
+  }
+  &.bg-nav {
+    box-shadow: 0px 1px 10px 0px #d6e9dd;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #333333;
+        font-size: 16px;
+      }
+    }
+  }
+}
+// banner part scss //
+#banner {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(346deg, #ffffff 50%, rgba(48, 171, 94, 0.02) 50%);
+  .banner-text {
+    h3 {
+      span {
+        position: relative;
+        &::after {
+          left: 0;
+          top: 60px;
+          width: 100%;
+          content: "";
+          height: 10px;
+          position: absolute;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../images/header-underline-shape.png);
+        }
+      }
+    }
+    p {
+      color: #6f7487;
+    }
+    .btn {
+      width: 170px;
+      height: 60px;
+      border-radius: 8px;
+      &:hover {
+        color: #ffffff;
+        background-color: #30ab5e;
+      }
+      &.active {
+        background-color: #30ab5e;
+      }
+    }
+  }
+}
+// services part scss //
+
+#services {
+  padding: 130px 0;
+  font-family: "Poppins", sans-serif;
+}
+.service-item {
+  height: 100%;
+  &.active {
+    border-radius: 15px;
+    background-color: #effaf3;
+  }
+  &:hover {
+    border-radius: 15px;
+    background-color: #effaf3;
+  }
+  .service-text {
+    h4 {
+      color: #333333;
+    }
+    p {
+      font-size: 14px;
+    }
+    label {
+      font-size: 22px;
+      color: #333333;
+      span {
+        color: #30ab5e;
+        font-size: 30px;
+      }
+    }
+  }
+  .service-btn {
+    .btn {
+      height: 55px;
+      width: 200px;
+      color: #30ab5e;
+      border-radius: 8px;
+      border: 1px solid #30ab5e;
+      &.active {
+        color: #ffffff;
+        background-color: #30ab5e;
+      }
+      &:hover {
+        color: #ffffff;
+        background-color: #30ab5e;
+      }
+    }
+  }
+}
+// Cpanel part scss //
+#Cpanel {
+  padding: 100px 0;
+  background-color: #cdebd8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/background-img-shape.png);
+  .Cpanel-content {
+    &::before {
+      top: -65px;
+      left: -90px;
+      content: "";
+      width: 200px;
+      height: 150px;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../images/left-yellow-shape.png);
+    }
+    &::after {
+      content: "";
+      right: -65px;
+      width: 200px;
+      height: 150px;
+      bottom: -50px;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../images/right-yellow-shape.png);
+    }
+    .Cpanel-item {
+      border-radius: 15px;
+      .Cpanel-icon {
+        width: 10%;
+      }
+      .Cpanel-text {
+        h4 {
+          color: #0e3e20;
+        }
+        p {
+          color: #828282;
+        }
+      }
+    }
+  }
+}
+// Solution part scss //
+#solution {
+  padding-top: 150px;
+  padding-bottom: 75px;
+  font-family: "Poppins", sans-serif;
+  .solution-item {
+    border-radius: 15px;
+    height: 100%;
+    &:hover {
+      box-shadow: 1px 1px 10px 0px #cdebd8;
+    }
+    h4 {
+      color: #333333;
+    }
+    p {
+      color: #6f7487;
+    }
+  }
+}
+
+// technical-issue part scss //
+#technical-issue {
+  padding: 75px 0;
+  background-color: #cdebd8;
+  font-family: "Poppins", sans-serif;
+  .technical-issue-text {
+    h3 {
+      color: #333333;
+    }
+    p {
+      color: #6f7487;
+    }
+    .btn {
+      height: 60px;
+      width: 180px;
+      border-radius: 8px;
+      border: 2px solid #cce0d3;
+      &.active {
+        color: #ffffff;
+        background-color: #30ab5e;
+      }
+      &:hover {
+        color: #ffffff;
+        background-color: #30ab5e;
+      }
+    }
+  }
+}
+// datacenters part scss //
+#datacenters {
+  padding: 130px 0;
+}
+// features part scss //
+#features {
+  padding: 120px 0px;
+  font-family: "Poppins", sans-serif;
+  background: rgba(48, 171, 94, 0.08);
+  .features-item {
+    .features-icon {
+      width: 20%;
+    }
+    .features-text {
+      h4 {
+        color: #0e3e20;
+      }
+      p {
+        color: #6f7487;
+      }
+    }
+  }
+}
+// user part scss //
+#user {
+  padding: 130px 0;
+  font-family: "Poppins", sans-serif;
+  .user-comment {
+    border-radius: 5px;
+    box-shadow: 0px 4px 100px rgba(41, 138, 77, 0.12);
+
+    .user-info {
+      .user-name {
+        h5 {
+          color: #0e3e20;
+        }
+        p {
+          color: #30ab5e;
+        }
+      }
+    }
+    p {
+      color: #797979;
+      font-size: 14px;
+    }
+  }
+}
+// user part scss //
+
+#brand {
+  padding: 24px 0;
+  background-color: #f9f9f9;
+}
+// contact part scss //
+#contact {
+  padding: 130px 0;
+  font-family: "Poppins", sans-serif;
+  .contact-content {
+    a {
+      width: 155px;
+      height: 145px;
+      border-radius: 10px;
+      border: 1px solid #30ab5e40;
+      .contact-item {
+        .contact-text {
+          color: #30ab5e;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+// footer part scss //
+
+#footer {
+  background-color: #333333;
+  font-family: "Poppins", sans-serif;
+  .footer-logo-address {
+    p {
+      font-size: 14px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+  }
+  .footer-content {
+    h5 {
+      font-size: 18px;
+    }
+    a {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .sub-newsletter {
+      .form-control {
+        height: 45px;
+        font-size: 12px;
+        border-radius: 8px;
+        padding-right: 80px;
+      }
+      .btn {
+        top: 50%;
+        right: 3px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 8px;
+        background-color: #30ab5e;
+        transform: translateY(-50%);
+      }
+    }
+    .social-media-icon {
+      a {
+        i {
+          width: 30px;
+          height: 30px;
+          font-size: 16px;
+          color: #333333;
+          line-height: 31px;
+          border-radius: 50%;
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    small {
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+// 2nd page------web-hosting page scss------ //
+
+// in-hero part scss //
+#pricing {
+  padding: 80px 0;
+  overflow: hidden;
+  background-image: linear-gradient(340deg, #ffffff 65%, rgba(48, 171, 94, 0.02) 50%);
+  .header-text {
+    h3 {
+      span {
+        &::after {
+          top: 65px;
+        }
+      }
+    }
+  }
+  .price-tabs-btn {
+    padding-top: 70px;
+    .nav {
+      width: 296px;
+      height: 50px;
+      border-radius: 8px;
+      border: 1px solid #30ab5e;
+      .nav-item {
+        .nav-link {
+          width: 145px;
+          height: 45px;
+          color: #333333;
+          font-size: 16px;
+          border-radius: 8px;
+          font-family: "Poppins", sans-serif;
+          &.active {
+            color: #ffffff;
+            background-color: #30ab5e;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    font-family: "Poppins", sans-serif;
+    .tab-pane {
+      .price-items {
+        height: 100%;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 36px 0px #0000001a;
+        .price-items-header {
+          h5 {
+            font-size: 24px;
+            color: #333333;
+            font-family: "Lato", sans-serif;
+            span {
+              &::after {
+                left: 0;
+                width: 100%;
+                height: 8px;
+                content: "";
+                bottom: -10px;
+                position: absolute;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(../images/price-item-header-underline2.png);
+              }
+            }
+          }
+        }
+        p {
+          color: #828282;
+        }
+        h6 {
+          color: #4f4f4f;
+          font-size: 20px;
+        }
+        ul {
+          padding-bottom: 200px !important;
+          li {
+            padding: 4px 0;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+        .monthly-price {
+          span {
+            color: #062d74;
+            font-size: 44px;
+          }
+        }
+        .price-btn {
+          .btn {
+            height: 50px;
+            color: #30ab5e;
+            border-radius: 8px;
+            border: 1px solid #30ab5e;
+            &:hover {
+              color: #ffffff;
+              background: #30ab5e;
+            }
+          }
+        }
+        &.active {
+          background: #f4fff8;
+          .price-items-header {
+            h5 {
+              color: #30ab5e;
+              span {
+                &::after {
+                  left: 0;
+                  width: 100%;
+                  height: 5px;
+                  content: "";
+                  bottom: -10px;
+                  position: absolute;
+                  background-size: contain;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-image: url(../images/price-item-header-active-underline.png);
+                }
+              }
+            }
+          }
+          h6 {
+            color: #30ab5e;
+          }
+          .price-btn {
+            .btn {
+              color: #ffffff;
+              background: #30ab5e;
+            }
+          }
+        }
+        &:hover {
+          background: #f4fff8;
+          .price-items-header {
+            h5 {
+              color: #30ab5e;
+              span {
+                &::after {
+                  background-image: url(../images/price-item-header-active-underline.png);
+                }
+              }
+            }
+          }
+          h6 {
+            color: #30ab5e;
+          }
+          .price-btn {
+            .btn {
+              color: #ffffff;
+              background: #30ab5e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// CloudLinux part scss //
+#cloud-linux {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+  .cloud-linux-text {
+    .header-text {
+      h3 {
+        font-size: 34px;
+        span {
+          &::after {
+            top: 42px;
+          }
+        }
+      }
+    }
+  }
+  .cloud-linux-table {
+    border-radius: 10px;
+    background-color: #f4fff8;
+    border: 2px solid #cce0d3;
+    .table-tr {
+      border-color: #cce0d3;
+      .table-title {
+        color: #30ab5e;
+        border-color: #cce0d3;
+      }
+      .accessories-name {
+        color: #333333;
+        border-color: #cce0d3;
+      }
+      .abilities-text {
+        color: #828282;
+        border-color: #cce0d3;
+      }
+    }
+  }
+  .cloud-linux-img {
+    padding-top: 100px;
+  }
+}
+// premium-speed part scss //
+#premium {
+  padding: 80px 0;
+  background-size: cover;
+  background-color: #cfeedb;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/background-img-shape.png);
+  .header-text {
+    h3 {
+      font-family: "Lato", sans-serif;
+      span {
+        &::after {
+          top: 63px;
+        }
+      }
+    }
+  }
+  .premium-item {
+    height: 100%;
+    border-radius: 16px;
+    font-family: "Poppins", sans-serif;
+    .premium-text {
+      h5 {
+        color: #333333;
+        font-weight: 800;
+      }
+      p {
+        color: #828282;
+      }
+    }
+  }
+}
+#premium-support {
+  padding: 120px 0;
+  .premium-item {
+    height: 100%;
+    border-radius: 16px;
+    font-family: "Lato", sans-serif;
+    box-shadow: 0px 4px 35px 0px #00000014;
+    .premium-text {
+      h5 {
+        color: #333333;
+      }
+      p {
+        color: #797979;
+      }
+    }
+  }
+}
+// faq part scss //
+#faq {
+  padding-top: 120px;
+  padding-bottom: 20px;
+  .header-text {
+    h3 {
+      span {
+        &::after {
+          top: 60px;
+          width: 100%;
+          height: 26px;
+          background-image: url(../images/faq-underline-shape.png);
+        }
+      }
+    }
+  }
+  .accordion {
+    font-family: "Poppins", sans-serif;
+    .accordion-item {
+      border-radius: 8px;
+      .accordion-header {
+        .accordion-button {
+          border-radius: 8px;
+          color: #333333;
+
+          &::after {
+            width: 8px;
+            height: 8px;
+            background-size: contain;
+            background-position: center;
+            background-image: url(../images/faq-icon-plas.png);
+          }
+          &:not(.collapsed) {
+            color: #30ab5e;
+            font-weight: 600;
+            box-shadow: none;
+            background-color: transparent;
+            &::after {
+              width: 8px;
+              height: 2px;
+              background-position: center;
+              background-size: contain;
+              background-image: url(../images/faq-icon-minus.png);
+            }
+          }
+        }
+      }
+      .accordion-collapse {
+        .accordion-body {
+          color: #6f7487;
+        }
+      }
+    }
+  }
+}
+// 3rd page------reseller web-hosting page scss------ //
+
+// Advanced-Featues part scss //
+#advanced-featues {
+  padding: 120px 0;
+  .advanced-featues-item {
+    height: 100%;
+    border-radius: 8px;
+    ul {
+      li {
+        color: #6f7487;
+      }
+    }
+  }
+}
+// providing-support part scss //
+#providing-support {
+  padding: 120px 0;
+  .providing-support-text {
+    .header-text {
+      h3 {
+        font-size: 34px;
+      }
+    }
+  }
+}
+// 4th page------dedicated-servers page scss------ //
+#dedicated-servers {
+  padding: 80px 0;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(340deg, #ffffff 65%, rgba(48, 171, 94, 0.02) 50%);
+  .dedicated-servers-table {
+    .table {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      .table-tr {
+        border-width: 12px;
+        vertical-align: middle;
+        border-color: rgba(0, 0, 0, 0.04);
+        box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.04);
+        td {
+          border-color: #d1f8de;
+          &.table-title {
+            color: #ffffff;
+            background: #30ab5e !important;
+            &.border-radius-left {
+              border-top-left-radius: 8px;
+            }
+            &.border-radius-right {
+              border-top-right-radius: 8px;
+            }
+          }
+          .btn {
+            height: 48px;
+            color: #3c3d50;
+            border-radius: 8px;
+            &:hover {
+              color: #ffffff;
+              background: #30ab5e;
+            }
+          }
+        }
+      }
+    }
+  }
+  // dedicated-servers-brand part scss //
+  #dedicated-servers-brand {
+    padding: 70px 0;
+    font-family: "Poppins", sans-serif;
+
+    .servers-brand-item {
+      .servers-brand-icon {
+        width: 195px;
+        height: 140px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.06);
+      }
+      .servers-brand-item-text {
+        span {
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+// virtual-servers part scss //
+#virtual-servers {
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+
+  .virtual-servers-item {
+    .virtual-servers-item-text {
+      h5 {
+        font-size: 24px;
+        color: #000000;
+      }
+      p {
+        color: #797979;
+      }
+    }
+  }
+}
+
+// 5th page------partnership page scss------ //
+
+// Partnership-Affliates part scss //
+#partnership-affliates {
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(340deg, #ffffff 65%, rgba(48, 171, 94, 0.02) 50%);
+
+  .header-text {
+    h3 {
+      span {
+        &::after {
+          height: 20px;
+          background-size: contain !important;
+          background-repeat: no-repeat !important;
+          background: url(../images/faq-underline-shape.png);
+        }
+      }
+    }
+  }
+  .partnership-affliates-text {
+    p {
+      color: #797979;
+    }
+  }
+}
+
+// features-affliates part scss //
+#features-affliates {
+  padding-bottom: 80px;
+  font-family: "Poppins", sans-serif;
+  .features-affliates-text {
+    .header-text {
+      h3 {
+        font-size: 34px;
+        span {
+          &::after {
+            left: 0;
+            top: 45px;
+          }
+        }
+      }
+      ul {
+        li {
+          img {
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// affliates-table part scss //
+#affliates-table {
+  padding: 70px 0;
+  font-family: "Poppins", sans-serif;
+  .dedicated-servers-table {
+    .table {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      .table-tr {
+        border-width: 12px;
+        vertical-align: middle;
+        border-color: rgba(0, 0, 0, 0.04);
+        box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.04);
+        td {
+          font-size: 16px;
+          border-color: #d1f8de;
+          &.table-title {
+            color: #000000;
+            background: #ebf7ef !important;
+            &.border-radius-left {
+              border-top-left-radius: 8px;
+            }
+            &.border-radius-right {
+              border-top-right-radius: 8px;
+            }
+            &.border-redius-bottom-left {
+              border-bottom-left-radius: 8px;
+            }
+            &.border-redius-bottom-right {
+              border-bottom-right-radius: 8px;
+            }
+          }
+          .btn {
+            height: 48px;
+            color: #3c3d50;
+            border-radius: 8px;
+            &:hover {
+              color: #ffffff;
+              background: #30ab5e;
+            }
+          }
+          .select-option {
+            .form-select {
+              width: auto;
+              background-size: 8px 6px;
+              border-color: #92a3c2 !important;
+              background-image: url(../images/select-icon.png);
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+          i {
+            width: 24px;
+            height: 24px;
+            color: #333333;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Commission part scss //
+
+#commisson {
+  padding: 70px 0;
+  .commisson-text {
+    .header-text {
+      h3 {
+        font-size: 35px;
+        font-family: "Poppins", sans-serif;
+        span {
+          &::after {
+            top: 45px;
+            height: 15px;
+          }
+        }
+      }
+      p {
+        font-family: "Lato", sans-serif;
+      }
+      .btn {
+        height: 40px;
+        color: #ffffff;
+        background-color: #30ab5e;
+      }
+    }
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .header-shape {
+    &::after {
+      top: -115px;
+      width: 100px;
+    }
+    &::before {
+      top: -115px;
+      width: 100px;
+    }
+  }
+  // home page | banner part //
+  .header-text h3 span::after {
+    top: 35px;
+  }
+  #banner .banner-text h3 span::after {
+    top: 45px;
+  }
+  // home page | service //
+  #services {
+    padding: 50px 0;
+  }
+  // home page | service //
+  #Cpanel {
+    padding: 50px 0;
+  }
+  // home page | u //
+  #solution {
+    padding-top: 50px;
+  }
+  // home page | technical-issue //
+  #technical-issue {
+    padding: 50px 0;
+  }
+  // home page | datacenters //
+  #datacenters {
+    padding: 50px 0;
+  }
+  // home page | features //
+  #features {
+    padding: 50px 0px;
+  }
+  // home page | user //
+  #user {
+    padding: 50px 0;
+  }
+  // home page | contact //
+  #contact {
+    padding: 50px 0;
+  }
+  // 2nd page------web-hosting page scss------ //
+  #pricing .header-text h3 span::after {
+    top: 45px;
+  }
+  // Pricing part scss //
+  #pricing {
+    padding: 50px 0;
+    .header-shape {
+      &::after {
+        top: -115px;
+        width: 100px;
+      }
+      &::before {
+        top: -115px;
+        width: 100px;
+      }
+    }
+  }
+  // premium part scss //
+  #premium .header-text h3 span::after {
+    top: 42px;
+  }
+  // cloud-linux part scss //
+  #cloud-linux {
+    padding-top: 50px;
+  }
+  // faq part scss //
+  #faq {
+    padding-top: 50px;
+    .header-text {
+      h3 {
+        font-size: 24px;
+        span::after {
+          top: 33px;
+        }
+      }
+    }
+  }
+
+  // 3rd page-----reseller web-hosting page scss------ //
+  #advanced-featues {
+    padding: 50px 0;
+  }
+
+  #advanced-featues .header-text h3 span::after {
+    top: 42px;
+  }
+  #providing-support .header-text h3 span::after {
+    top: 42px;
+  }
+  #providing-support {
+    padding: 50px 0;
+  }
+
+  // 4th page-----affliates-table page scss------ //
+  #partnership-affliates {
+    padding-bottom: 50px;
+  }
+  #commisson {
+    padding: 50px 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header-shape::before {
+    top: -45px;
+    right: -32px;
+    width: 100px;
+    height: 75px;
+  }
+  .header-shape::after {
+    left: -30px;
+    top: -45px;
+    width: 100px;
+    height: 75px;
+  }
+  // home page | banner part //
+  #contact-bar .contact-bar-content .contact-bar-text {
+    font-size: 12px;
+  }
+  // home page | banner part //
+  #banner .banner-text h3 span::after {
+    top: 50px;
+  }
+  #banner .banner-text .btn {
+    width: 150px;
+    height: 55px;
+  }
+  // home page | technical-issue part //
+  #technical-issue .technical-issue-text .btn {
+    height: 55px;
+    width: 157px;
+  }
+  // home page | banner part //
+  #pricing .header-text h3 span::after {
+    top: 45px;
+  }
+  // 3rd page------reseller web-hosting page scss------ //
+  #providing-support .providing-support-text .header-text h3 {
+    font-size: 29px;
+  }
+  #providing-support .header-text h3 span::after {
+    top: 40px;
+  }
+  #commisson .commisson-text .header-text h3 {
+    font-size: 26px;
+  }
+  #commisson .commisson-text .header-text h3 span::after {
+    top: 35px;
+  }
+}

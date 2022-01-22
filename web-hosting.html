@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Lato | Poppins google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- font-awesome v4.7 icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./scss/main.css" />
+    <title>Ecnhost Website</title>
+  </head>
+
+  <body>
+    <!-- contact-bar part html start -->
+    <section id="contact-bar" class="py-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-md-6">
+            <div class="contact-bar-content d-none d-md-flex">
+              <div class="contact-bar-text me-3 me-lg-3">
+                <a href="tel:0123456890" class="text-white d-flex align-items-center"><i class="fa fa-phone me-2"></i> (480) 555-0103</a>
+              </div>
+              <div class="contact-bar-text ms-lg-4">
+                <a href="mailto:contacthr@ecnhost.com" class="text-white d-flex align-items-center"><i class="fa fa-envelope-o me-2"></i> contacthr@ecnhost.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-md-6 ms-auto">
+            <div class="lang-support-login d-flex align-items-center justify-content-end">
+              <div class="language me-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Eng</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                </select>
+              </div>
+              <div class="support-text mx-3"><a class="fw-normal text-white" href="#">Support</a></div>
+              <div class="user-login ms-3">
+                <button class="btn fw-semiBold text-white rounded-pill">User Log In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-bar part html start -->
+    <!-- navbar part html start -->
+    <section id="menu-navbar" class="navbar py-3 navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid" src="./images/logo.png" alt="logo.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-3"><a class="nav-link fw-semiBold" href="./index.html">Home</a></li>
+            <li class="nav-item px-3 dropdown">
+              <a class="nav-link fw-semiBold dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Items 1</a></li>
+                <li><a class="dropdown-item" href="#">Items 2</a></li>
+                <li><a class="dropdown-item" href="#">Items 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-3"><a class="nav-link fw-semiBold" href="#">About Us</a></li>
+            <li class="nav-item px-3"><a class="nav-link fw-semiBold" href="#">Partnership</a></li>
+            <li class="nav-item ps-3"><a class="nav-link fw-semiBold" href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- navbar part html end -->
+    <!-- Pricing part html end -->
+    <section id="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-shape position-relative"></div>
+            <div class="row">
+              <div class="col-lg-7 m-auto">
+                <div class="header-text text-center">
+                  <h3 class="display-5 fw-semiBold mb-3 lh-base">Blazing Fast Web Hosting & <span>Affordable</span> Pricing Plan</h3>
+                  <p class="fs-6 pt-2 fw-normal">Find the Hosting Plan that's Right for Your Business. We Have the Features and Service You Deserve. Choose a fine-tuned and secure Web Hosting Services solution!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="price-tabs-btn">
+              <ul class="nav nav-pills m-auto align-items-center justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link fw-semiBold active" id="pills-annual-tab" data-bs-toggle="pill" data-bs-target="#pills-annual" type="button" role="tab" aria-controls="pills-annual" aria-selected="true">Annual</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link fw-semiBold" id="pills-monthly-tab" data-bs-toggle="pill" data-bs-target="#pills-monthly" type="button" role="tab" aria-controls="pills-monthly" aria-selected="false">Monthly</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row m-auto pt-5">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
+              <div class="row m-auto">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="price-items p-5 position-relative">
+                    <div class="price-items-header">
+                      <h5 class="fw-bold mb-3"><span class="position-relative">Eco</span></h5>
+                    </div>
+                    <p class="fw-nomral pt-2">The plan is ideal to get started or who has basic website with minimal resource usages</p>
+                    <h6 class="fw-semiBold pt-2">Get The Basics</h6>
+                    <ul>
+                      <li>2 GB SSD Storage</li>
+                      <li>250 GB Bandwidth</li>
+                      <li>2 Websites</li>
+                      <li>FREE SSL Certificates</li>
+                      <li>LiteSpeed with LSCache</li>
+                      <li>Website Toolkit</li>
+                      <li>Advanced Features</li>
+                      <li>Security Shield</li>
+                    </ul>
+                    <div class="position-absolute bottom-0 mb-5 start-50 translate-middle-x w-75">
+                      <div class="monthly-price pt-5 pb-2"><span class="fw-bold">$0.99</span> <sub class="fw-medium">/ Month</sub></div>
+                      <div class="d-grid price-btn pt-4">
+                        <button class="btn" type="button">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="price-items active p-5 position-relative">
+                    <div class="price-items-header">
+                      <h5 class="fw-bold position-relative mb-3"><span class="position-relative">Standard</span></h5>
+                    </div>
+                    <p class="fw-nomral pt-2">The plan is ideal for small business owners or who want to host multiple websites</p>
+                    <h6 class="fw-semiBold pt-2">Get The Basics</h6>
+                    <ul>
+                      <li>10 GB SSD Storage</li>
+                      <li>500 GB Bandwidth</li>
+                      <li>5 Websites</li>
+                      <li>FREE SSL Certificates</li>
+                      <li>LiteSpeed with LSCache</li>
+                      <li>Website Toolkit</li>
+                      <li>Advanced Features</li>
+                      <li>Security Shield</li>
+                    </ul>
+                    <div class="position-absolute bottom-0 mb-5 start-50 translate-middle-x w-75">
+                      <div class="monthly-price pt-5 pb-2"><span class="fw-bold">$4.99</span> <sub class="fw-medium">/ Month</sub></div>
+                      <div class="d-grid price-btn pt-4">
+                        <button class="btn" type="button">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="price-items p-5 position-relative">
+                    <div class="price-items-header">
+                      <h5 class="fw-bold position-relative mb-3"><span class="position-relative">Advanced</span></h5>
+                    </div>
+                    <p class="fw-nomral pt-2">Ideal for moderate traffic and who is looking more power and enhanced performance.</p>
+                    <h6 class="fw-semiBold pt-2">Get The Basics</h6>
+                    <ul class="mb-2">
+                      <li>100 GB SSD Storage</li>
+                      <li>1 TB Bandwidth</li>
+                      <li>Unlimited Websites</li>
+                      <li>FREE SSL Certificates</li>
+                      <li>LiteSpeed with LSCache</li>
+                      <li>Website Toolkit</li>
+                      <li>Advanced Features</li>
+                    </ul>
+                    <div class="position-absolute bottom-0 mb-5 start-50 translate-middle-x w-75">
+                      <div class="monthly-price pt-5 pb-2"><span class="fw-bold">$9.99</span> <sub class="fw-medium">/ Month</sub></div>
+                      <div class="d-grid price-btn pt-4">
+                        <button class="btn" type="button">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-monthly" role="tabpanel" aria-labelledby="pills-monthly-tab">
+              <div class="row m-auto">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="price-items p-5 position-relative">
+                    <div class="price-items-header">
+                      <h5 class="fw-bold mb-3"><span class="position-relative">Eco</span></h5>
+                    </div>
+                    <p class="fw-nomral pt-2">The plan is ideal to get started or who has basic website with minimal resource usages</p>
+                    <h6 class="fw-semiBold pt-2">Get The Basics</h6>
+                    <ul>
+                      <li>2 GB SSD Storage</li>
+                      <li>250 GB Bandwidth</li>
+                      <li>2 Websites</li>
+                      <li>FREE SSL Certificates</li>
+                      <li>LiteSpeed with LSCache</li>
+                      <li>Website Toolkit</li>
+                      <li>Advanced Features</li>
+                      <li>Security Shield</li>
+                    </ul>
+                    <div class="position-absolute bottom-0 mb-5 start-50 translate-middle-x w-75">
+                      <div class="monthly-price pt-5 pb-2"><span class="fw-bold">$0.99</span> <sub class="fw-medium">/ Month</sub></div>
+                      <div class="d-grid price-btn pt-4">
+                        <button class="btn" type="button">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="price-items active position-relative p-5">
+                    <div class="price-items-header">
+                      <h5 class="fw-bold position-relative mb-3"><span class="position-relative">Standard</span></h5>
+                    </div>
+                    <p class="fw-nomral pt-2">The plan is ideal for small business owners or who want to host multiple websites</p>
+                    <h6 class="fw-semiBold pt-2">Get The Basics</h6>
+                    <ul>
+                      <li>10 GB SSD Storage</li>
+                      <li>500 GB Bandwidth</li>
+                      <li>5 Websites</li>
+                      <li>FREE SSL Certificates</li>
+                      <li>LiteSpeed with LSCache</li>
+                      <li>Website Toolkit</li>
+                      <li>Advanced Features</li>
+                      <li>Security Shield</li>
+                    </ul>
+                    <div class="position-absolute bottom-0 mb-5 start-50 translate-middle-x w-75">
+                      <div class="monthly-price pt-5 pb-2"><span class="fw-bold">$4.99</span> <sub class="fw-medium">/ Month</sub></div>
+                      <div class="d-grid price-btn pt-4">
+                        <button class="btn" type="button">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div class="price-items p-5 position-relative">
+                    <div class="price-items-header">
+                      <h5 class="fw-bold position-relative mb-3"><span class="position-relative">Advanced</span></h5>
+                    </div>
+                    <p class="fw-nomral pt-2">Ideal for moderate traffic and who is looking more power and enhanced performance.</p>
+                    <h6 class="fw-semiBold pt-2">Get The Basics</h6>
+                    <ul class="mb-2">
+                      <li>100 GB SSD Storage</li>
+                      <li>1 TB Bandwidth</li>
+                      <li>Unlimited Websites</li>
+                      <li>FREE SSL Certificates</li>
+                      <li>LiteSpeed with LSCache</li>
+                      <li>Website Toolkit</li>
+                      <li>Advanced Features</li>
+                    </ul>
+                    <div class="position-absolute bottom-0 mb-5 start-50 translate-middle-x w-75">
+                      <div class="monthly-price pt-5 pb-2"><span class="fw-bold">$9.99</span> <sub class="fw-medium">/ Month</sub></div>
+                      <div class="d-grid price-btn pt-4">
+                        <button class="btn" type="button">Get Started</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pricing part html end -->
+    <!-- CloudLinux part html start -->
+    <section id="cloud-linux">
+      <div class="container">
+        <div class="row justify-content-lg-between">
+          <div class="col-lg-5">
+            <div class="cloud-linux-text">
+              <div class="header-text">
+                <h3 class="fw-semiBold mb-3 lh-base"><span>CloudLinux</span> Lightweight Virtual Environment (LVE)</h3>
+                <p class="fs-6 pt-2 fw-normal lh-base">The CloudLinux OS Lightweight Virtualized Environment is a kernel-level technology that isolates each tenant into their own environment and provides them with the amount of resources (CPU, IO, memory, processes, etc.) that can be used – specific to each individual customer/p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="cloud-linux-table px-4 py-3">
+              <table class="table table-bordered border-0 mb-0">
+                <tbody>
+                  <tr class="table-tr border-top-0">
+                    <td class="table-title fw-semiBold fs-6 border-start-0">CloudLinux LIVE Limit</td>
+                    <td class="table-title fw-semiBold fs-6">Eco</td>
+                    <td class="table-title fw-semiBold fs-6">Standard</td>
+                    <td class="table-title fw-semiBold fs-6 border-end-0">Advanced</td>
+                  </tr>
+                  <tr class="table-tr">
+                    <td class="border-start-0 accessories-name">RAM</td>
+                    <td class="abilities-text">700 MB</td>
+                    <td class="abilities-text">1 GB</td>
+                    <td class="abilities-text border-end-0">2 GB</td>
+                  </tr>
+                  <tr class="table-tr">
+                    <td class="border-start-0 accessories-name">Disk I/O</td>
+                    <td class="abilities-text">20 Mbps I/O</td>
+                    <td class="abilities-text">20 Mbps I/O</td>
+                    <td class="abilities-text border-end-0">50 Mbps I/O</td>
+                  </tr>
+                  <tr class="table-tr">
+                    <td class="border-start-0 accessories-name">Concurrent Connections</td>
+                    <td class="abilities-text">20 EP</td>
+                    <td class="abilities-text">20 EP</td>
+                    <td class="abilities-text border-end-0">50 EP</td>
+                  </tr>
+                  <tr class="table-tr">
+                    <td class="border-start-0 accessories-name">Max. Number of Processes</td>
+                    <td class="abilities-text">100 nPROC</td>
+                    <td class="abilities-text">100 nPROC</td>
+                    <td class="abilities-text border-end-0">100 nPROC</td>
+                  </tr>
+                  <tr class="table-tr border-top-1 border-bottom-0">
+                    <td class="border-start-0 accessories-name">CPU Cores</td>
+                    <td class="abilities-text">1 CPU Core</td>
+                    <td class="abilities-text">1 CPU Core</td>
+                    <td class="abilities-text border-end-0">2 CPU Core</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="cloud-linux-img text-center">
+              <img src="./images/CloudLinux.png" alt="CloudLinux" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CloudLinux part html end -->
+    <!-- Premium part html start -->
+    <section id="premium">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text text-center">
+              <h3 class="display-5 fw-bold mb-3 lh-base">Guaranteed <span>Premium Speed</span></h3>
+              <p class="fs-6 pt-2 fw-normal lh-base">Accelerate your website's loading time with our incredible technology stack.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-10 m-auto col-md-12">
+            <div class="row m-auto">
+              <div class="col-md-6 mb-4">
+                <div class="premium-item bg-white py-4 px-5">
+                  <div class="premium-icon mb-3">
+                    <img src="./images/premium.png" alt="premium" class="img-fluid" />
+                  </div>
+                  <div class="premium-text">
+                    <h5 class="fs-5">LiteSpeed Web Server & LSCache</h5>
+                    <p class="fs-6 lh-base mb-0">Web Hosting with LiteSpeed Web Server experience creates a captive audience of satisfied users and higher search engine rankings. Our Web Hosting blended with litespeed web server</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="premium-item bg-white py-4 px-5">
+                  <div class="premium-icon mb-3">
+                    <img src="./images/premium2.png" alt="premium" class="img-fluid" />
+                  </div>
+                  <div class="premium-text">
+                    <h5 class="fs-5">Stable & Secure Cloud Technology</h5>
+                    <p class="fs-6 lh-base mb-0">We use Cloudlinux for making the server secure, stable. It improves the server stability by encapsulating each client in a secure, isolated environment</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="premium-item bg-white py-4 px-5">
+                  <div class="premium-icon mb-3">
+                    <img src="./images/premium3.png" alt="premium" class="img-fluid" />
+                  </div>
+                  <div class="premium-text">
+                    <h5 class="fs-5">High Performance SSD Servers</h5>
+                    <p class="fs-6 lh-base mb-0">We use Enterprise SSD Storage for high performance. SSDs provide for a 1000x increase in input/output operations as compared to regular drives.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="premium-item bg-white py-4 px-5">
+                  <div class="premium-icon mb-3">
+                    <img src="./images/premium4.png" alt="premium" class="img-fluid" />
+                  </div>
+                  <div class="premium-text">
+                    <h5 class="fs-5">Quic-HTTP/3</h5>
+                    <p class="fs-6 lh-base mb-0">HTTP/3 with Quic reduces latency and speeds up website delivery due to improved parallelization.HTTP/3 with Quic reduces latency and speeds up website</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="premium-support">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="premium-item text-center bg-white py-4 px-4">
+              <div class="premium-icon mb-3">
+                <img src="./images/premium-installer.png" alt="premium-installer" class="img-fluid" />
+              </div>
+              <div class="premium-text">
+                <h5 class="fs-5 fw-bold">Script Installer</h5>
+                <p class="fs-6 lh-base mb-0">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="premium-item text-center bg-white py-4 px-4">
+              <div class="premium-icon mb-3">
+                <img src="./images/premium-backups.png" alt="premium-backups" class="img-fluid" />
+              </div>
+              <div class="premium-text">
+                <h5 class="fs-5 fw-bold">Automated Backups</h5>
+                <p class="fs-6 lh-base mb-0">No more manual backups, that's all taken care of automatically. And you're in full control of when your daily backups take place. Restore a clean version of your website – or recover a single file or folder – with just one click.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="premium-item text-center bg-white py-4 px-4">
+              <div class="premium-icon mb-3">
+                <img src="./images/premium-Migration.png" alt="premium-Migration" class="img-fluid" />
+              </div>
+              <div class="premium-text">
+                <h5 class="fs-5 fw-bold">Free Migration</h5>
+                <p class="fs-6 lh-base mb-0">Transfer your website to us worry-free with the help of our migration experts. Or, enjoy free automated migrations with our easy-to-use Migration Tool. You can migrate your WordPress site by Just a click!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Premium part html end -->
+    <!-- features part html start -->
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text text-center pb-3">
+              <h3 class="fs-1 mb-3 fw-semiBold">What Makes ECNHOST <span>Special</span>?</h3>
+              <p class="fs-6 pt-2 fw-normal">We Have the Features & Service You Deserve!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-lg-10 col-md-12 m-auto">
+            <div class="row justify-content-lg-between">
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mb-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">99.9% Uptime Guarantee</h4>
+                    <p class="fw-nomral fs-6 lh-base">We understand the uptime importance. We pledge to deliver in excess of 99.9% uptime, each and every month.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mb-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon2.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">30 Days Money-back Guarantee</h4>
+                    <p class="fw-nomral fs-6 lh-base">We have 30 Days moneyback guarantee, so you can try our service without any risk. We'll refund you if you're not satisfied.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mt-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon3.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">Free 24/7 Professional Support</h4>
+                    <p class="fw-nomral fs-6 lh-base">Our customer support is 24x7x365. With your hosting package you also gain 24x7 accesses to our expert support team.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="features-item d-flex mt-lg-5">
+                  <div class="features-icon flex-shrink-0">
+                    <img src="./images/features-icon4.png" class="img-fluid" alt="features-icon.png" />
+                  </div>
+                  <div class="features-text">
+                    <h4 class="fs-5 fw-semiBold">Free SSL Certificate</h4>
+                    <p class="fw-nomral fs-6 lh-base">We are offering Unlimited SSL for Free. Easy to install/auto-renewed Let's Encrypt SSL certificates can help secure your websites.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features part html end -->
+    <!-- faq part html start -->
+    <section id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text text-center pb-3">
+              <h3 class="display-5 fw-bold mb-3 lh-base"><span>Frequently Asked Questions</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 m-auto">
+            <div class="accordion pt-4" id="accordionExample">
+              <div class="accordion-item mb-4 border">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fs-6 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How long does it take to setup my account?</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0 fs-6">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fs-6 py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Which Plan Should I Choose?</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0 fs-6">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fs-6 py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Can I upgrade my plan after I sign up?</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0 fs-6">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button fs-6 py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Does ecnhost charge any hidden fees?</button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0 fs-6">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button fs-6 py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Will you transfer over my website?</button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0 fs-6">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button fs-6 py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">What payment methods do you accept?</button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0 fs-6">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</div>
+                </div>
+              </div>
+              <div class="accordion-item mb-4 border">
+                <h2 class="accordion-header" id="headingseven">
+                  <button class="accordion-button fs-6 py-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">Why don't you offer unlimited storage?</button>
+                </h2>
+                <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body pt-0 fs-6">With our one click installer tool, you can create any type of website: blog, forum, ecommerce site, and so much more! No more thinking for databases,downloading and uploading script files on your own, and other technical work.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq part html end -->
+    <!-- contact part html start -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div class="header-text text-center pb-3">
+              <h3 class="fs-1 mb-3 fw-semiBold">Not sure <span>where to Start?</span></h3>
+              <p class="fs-6 pt-2 fw-normal">Talk to one of our hosting specialist who will review your needs and propose a tailored hosting solution that will match your specific business reality and needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-9 m-auto">
+            <div class="row">
+              <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                <div class="contact-content mb-md-0">
+                  <a class="d-flex align-items-center justify-content-center m-auto" href="#">
+                    <div class="contact-item text-center">
+                      <div class="contact-icon mb-4">
+                        <img src="./images/live-chat.png" alt="contact-icon" class="img-fluid" />
+                      </div>
+                      <div class="contact-text mt-1">Sales Live Chat</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                <div class="contact-content mb-md-0">
+                  <a class="d-flex align-items-center justify-content-center m-auto" href="#">
+                    <div class="contact-item text-center">
+                      <div class="contact-icon mb-4">
+                        <img src="./images/support-tickets.png" alt="contact-icon" class="img-fluid" />
+                      </div>
+                      <div class="contact-text mt-1">Support Tickets</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                <div class="contact-content mb-md-0">
+                  <a class="d-flex align-items-center justify-content-center m-auto" href="#">
+                    <div class="contact-item text-center">
+                      <div class="contact-icon mb-4">
+                        <img src="./images/call-us-now.png" alt="contact-icon" class="img-fluid" />
+                      </div>
+                      <div class="contact-text mt-1">Call Us Now</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+                <div class="contact-content mb-md-0">
+                  <a class="d-flex align-items-center justify-content-center m-auto" href="#">
+                    <div class="contact-item text-center">
+                      <div class="contact-icon mb-4">
+                        <img src="./images/send-us-email.png" alt="contact-icon" class="img-fluid" />
+                      </div>
+                      <div class="contact-text mt-1">Send Us Email</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact part html end -->
+    <!-- footer part html start -->
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col-lg-2 mb-4 mb-lg-0 col-6">
+            <div class="footer-logo-address text-white">
+              <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="./images/white-logo.png" alt="logo.png" />
+              </a>
+              <p class="fw-normal mt-3">Experience the next level SSD hosting which built for speed!</p>
+              <h5 class="fw-semiBold">Our Address</h5>
+              <p class="fw-normal mt-3">ECNHOST, LLC 8 The Green Ste R Dover, DE 1990 +13022195558</p>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0 col-6 offset-lg-1">
+            <div class="footer-list text-white">
+              <h5 class="mb-3">Product & Solution</h5>
+              <ul>
+                <li class="py-1"><a class="text-white py-1" href="#">Web Hosting</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Reseller Hosting</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Windows VPS</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Dedicated Server</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Domain Registration</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Domain Transfer</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">Business Email</a></li>
+                <li class="py-1"><a class="text-white py-1" href="#">G-Suite</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0 col-6">
+            <div class="footer-content text-white">
+              <h5 class="mb-3">Company</h5>
+              <ul>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">About Us</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Our Beckbenchers</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Our Blog</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Contact Us</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">knowledgebase</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Service Status</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Support Centerl</a></li>
+                <li class="py-1"><a class="text-white py-1 fw-normal" href="#">Bank Payment</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0 col-6">
+            <div class="footer-content text-white">
+              <h5>Subscribe Out Newsletter</h5>
+              <p class="fw-normal">Subscribe for new offers and updates.</p>
+              <form>
+                <div class="sub-newsletter position-relative mb-4">
+                  <input class="form-control me-2" type="search" placeholder="Enter your email address" aria-label="Search" />
+                  <button class="btn position-absolute text-white" type="submit">Subscribe</button>
+                </div>
+              </form>
+              <h5>Connect With Us</h5>
+              <p class="fw-normal">Follow us on facebook, twitter and linkedin</p>
+              <div class="social-media-icon">
+                <a class="me-1" href="#"><i class="fa fa-facebook text-center"></i></a>
+                <a class="mx-1" href="#"><i class="fa fa-twitter text-center"></i></a>
+                <a class="ms-1" href="#"><i class="fa fa-linkedin text-center"></i></a>
+              </div>
+              <div class="payment-methods pt-3">
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-visa.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-paypal.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-masterCard.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-discoverNetwork.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-amex.png" alt="payment.png" />
+                </a>
+                <a href="#">
+                  <img class="img-fluid" src="./images/payment-bitcoin.png" alt="payment.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col-6">
+            <div class="footer-copyright text-white"><small class="fw-normal">© 2021 ECNHOST LLC, All Rights Reserved</small></div>
+          </div>
+          <div class="col-6">
+            <div class="footer-copyright text-end text-white">
+              <a class="text-white pe-2 pe-md-4 fw-normal" href="#">Terms of Service</a>
+              <a class="text-white ps-2 ps-md-4 fw-normal" href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer part html end -->
+    <!-- jquery library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="./js/custom.js"></script>
+  </body>
+</html>
