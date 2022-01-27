@@ -35,8 +35,9 @@ a:hover {
   &::after {
     left: 0;
     top: -40px;
-    width: 220px;
+    z-index: -1;
     content: "";
+    width: 220px;
     height: 175px;
     position: absolute;
     transform: rotate(45deg);
@@ -47,7 +48,7 @@ a:hover {
   }
   &::before {
     right: 0;
-    top: -45px;
+    top: -48px;
     width: 220px;
     content: "";
     height: 175px;
@@ -81,6 +82,7 @@ a:hover {
     color: #6f7487;
   }
 }
+
 // contact part scss //
 #contact-bar {
   background-color: #333333;
@@ -94,16 +96,19 @@ a:hover {
   }
   .lang-support-login {
     .language {
-      .form-select {
-        .flag-icon {
-          width: 25px;
-          height: 16px;
-          background-size: contain;
-          background-position: center;
-          background-repeat: no-repeat;
-          &.flag-icon-us {
-            background: url(../images/usa-flag.png);
+      .dropdown {
+        border-radius: 8px;
+        .dropdown-toggle {
+          img {
+            border-radius: 8px;
           }
+          &::after {
+            vertical-align: 0.1em;
+            border-top-color: #30ab5e;
+          }
+        }
+        .dropdown-menu {
+          z-index: 9999;
         }
       }
     }
@@ -142,6 +147,12 @@ a:hover {
       .nav-link {
         color: #333333;
         font-size: 16px;
+      }
+    }
+    .dropdown {
+      &:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; // remove the gap so it doesn't close
       }
     }
   }
@@ -777,6 +788,7 @@ a:hover {
 // Advanced-Featues part scss //
 #advanced-featues {
   padding: 120px 0;
+  font-family: "Poppins", sans-serif;
   .advanced-featues-item {
     height: 100%;
     border-radius: 8px;
@@ -790,6 +802,7 @@ a:hover {
 // providing-support part scss //
 #providing-support {
   padding: 120px 0;
+  font-family: "Poppins", sans-serif;
   .providing-support-text {
     .header-text {
       h3 {
@@ -1026,6 +1039,313 @@ a:hover {
   }
 }
 
+// 6th page------windows-vps page scss------ //
+
+// windows-vps header part scss //
+#windows-vps-header {
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(342deg, #ffffff 30%, rgba(48, 171, 94, 0.02) 30%);
+}
+// windows-vps part scss //
+#windows-vps {
+  padding: 70px 0;
+  background-color: #eaf8ef;
+  font-family: "Poppins", sans-serif;
+  .header-text {
+    h3 {
+      font-size: 35px;
+      span {
+        &::after {
+          top: 40px;
+        }
+      }
+    }
+  }
+  .storage-volume {
+    &::after {
+      top: 0;
+      left: 50%;
+      height: 4px;
+      width: 100%;
+      content: "";
+      border-radius: 30px;
+      position: absolute;
+      background-color: #30ab5e;
+      transform: translateX(-50%);
+    }
+    .ram-slot {
+      color: #333333;
+      &::after {
+        top: -19px;
+        left: 50%;
+        z-index: 1;
+        width: 2px;
+        height: 9px;
+        content: "";
+        position: absolute;
+        border-radius: 30px;
+        background-color: #4cd37f;
+        transform: translateX(-50%);
+      }
+      &.active {
+        color: #333333;
+        background: transparent;
+        &::after {
+          left: 50%;
+          top: -26px;
+          z-index: 1;
+          width: 24px;
+          content: "";
+          height: 24px;
+          position: absolute;
+          border-radius: 50%;
+          border: 4px solid #caeed8;
+          background-color: #4cd37f;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  .vps-accessories {
+    .vps-accessories-content {
+      .vps-accessories-item {
+        width: 160px;
+        height: 160px;
+        border-radius: 6px;
+
+        p {
+          color: #30ab5e;
+        }
+        h4 {
+          color: #000000;
+        }
+      }
+    }
+  }
+  .vps-manage {
+    .card {
+      border-radius: 6px;
+      .card-body {
+        h5 {
+          font-size: 36px;
+        }
+        a {
+          border-radius: 8px;
+          padding: 15px 35px;
+          background-color: #30ab5e;
+        }
+      }
+      .card-footer {
+        span {
+          font-size: 12px;
+        }
+        ul {
+          li {
+            position: relative;
+            &::after {
+              top: 45%;
+              left: 0;
+              width: 4px;
+              height: 4px;
+              content: "";
+              position: absolute;
+              transform: translateX(-50%);
+              background-color: #30ab5e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 7th page-----about-ecnHost page scss------ //
+#about-ecnhost {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(340deg, #ffffff 65%, rgba(48, 171, 94, 0.02) 50%);
+  .header-shape {
+    &::after {
+      top: -85px;
+    }
+    &::before {
+      top: -95px;
+    }
+  }
+  // managed-service part scss //
+  .managed-service {
+    .header-text {
+      h3 {
+        font-size: 34px;
+        span {
+          &::after {
+            top: 44px;
+          }
+        }
+      }
+      ul {
+        li {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+// vision-mission part scss //
+#vision-mission {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+
+  .vision-mission-text {
+    border-radius: 16px;
+    a {
+      color: #30ab5e;
+    }
+  }
+}
+
+// 8th page-----data-center page scss------ //
+#data-center {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-family: "Poppins", sans-serif;
+  .header-shape {
+    &::after {
+      top: -85px;
+    }
+    &::before {
+      top: -95px;
+    }
+  }
+}
+
+// 9th page-----terms and policy page scss------ //
+#terms-services {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  .terms-services-content {
+    .header-text {
+      h3 {
+        font-size: 34px;
+        span {
+          &::after {
+            top: 40px;
+          }
+        }
+      }
+    }
+    .heading-terms-policy {
+      h3 {
+        font-size: 34px;
+      }
+      .discription {
+        p {
+          color: #797979 !important;
+        }
+      }
+    }
+  }
+}
+#refund-policy {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+  .refund-policy-content {
+    .header-text {
+      h3 {
+        font-size: 34px;
+        span {
+          &::after {
+            top: 40px;
+          }
+        }
+      }
+    }
+    .refund-delivery-services {
+      h3 {
+        font-size: 34px;
+      }
+      .discription {
+        p {
+          font-size: 16px;
+          color: #797979 !important;
+        }
+        ul {
+          li {
+            color: #797979;
+            font-size: 16px;
+            i {
+              height: 18px;
+              width: 18px;
+              font-size: 10px;
+              margin-top: 4px;
+              border-radius: 2px;
+              background-color: #30ab5e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 10th page-----Privacy-Policy page scss------ //
+#privacy-policy {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  .privacy {
+    .header-text {
+      h3 {
+        font-size: 34px;
+        span {
+          &::after {
+            top: 45px;
+          }
+        }
+      }
+    }
+    .privacy-content {
+      p {
+        color: #797979;
+        font-size: 16px;
+      }
+      ul {
+        li {
+          color: #797979;
+          font-size: 16px;
+          i {
+            height: 18px;
+            width: 18px;
+            font-size: 10px;
+            margin-top: 4px;
+            border-radius: 2px;
+            background-color: #30ab5e;
+          }
+        }
+      }
+    }
+  }
+  .heading-terms-policy {
+    h3 {
+      color: #333333;
+      font-size: 34px;
+    }
+    .discription {
+      p {
+        color: #797979;
+        font-size: 16px;
+      }
+    }
+    p {
+      color: #797979;
+      font-size: 16px;
+    }
+  }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) {
   .header-shape {
@@ -1037,6 +1357,39 @@ a:hover {
       top: -115px;
       width: 100px;
     }
+  }
+  .modal-backdrop.show {
+    z-index: 9;
+  }
+  .modal {
+    .modal-content {
+      height: 100vh;
+    }
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+  .modal.show .modal-dialog {
+    transform: none !important;
+  }
+  .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(80px, 0px);
+  }
+  .modal-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: 0 !important;
+  }
+  .user-login {
+    .btn {
+      width: 100px;
+      height: 35px;
+      font-size: 13px;
+      background-color: #30ab5e;
+    }
+  }
+  .dropdown-toggle::after {
+    margin-left: 0;
   }
   // home page | banner part //
   .header-text h3 span::after {
@@ -1138,21 +1491,82 @@ a:hover {
   #commisson {
     padding: 50px 0;
   }
+  #windows-vps-header {
+    padding: 50px 0;
+  }
+  #windows-vps-header .header-text h3 span::after {
+    top: 48px;
+  }
+  // about-ecnHost part scss //
+  #about-ecnhost {
+    padding: 50px 0;
+    .header-text h3 span::after {
+      top: 45px;
+    }
+  }
+  #about-ecnhost .header-shape::before {
+    top: -100px;
+  }
+  #about-ecnhost .header-shape::after {
+    top: -95px;
+  }
+  #data-center .header-text h3 span::after {
+    top: 40px;
+  }
+  #data-center .header-shape::before {
+    top: -105px;
+  }
+  #data-center .header-shape::after {
+    top: -105px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .header-shape::before {
-    top: -45px;
+    top: -45px !important;
     right: -32px;
     width: 100px;
     height: 75px;
   }
   .header-shape::after {
+    top: -45px !important;
     left: -30px;
-    top: -45px;
     width: 100px;
     height: 75px;
+  }
+  .modal-backdrop.show {
+    z-index: 9;
+  }
+  .modal {
+    .modal-content {
+      height: 100vh;
+    }
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+  .modal.show .modal-dialog {
+    transform: none !important;
+  }
+  .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(80px, 0px);
+  }
+  .modal-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: 0 !important;
+  }
+  .user-login {
+    .btn {
+      width: 100px;
+      height: 35px;
+      font-size: 13px;
+      background-color: #30ab5e;
+    }
+  }
+  .dropdown-toggle::after {
+    margin-left: 0;
   }
   // home page | banner part //
   #contact-bar .contact-bar-content .contact-bar-text {
@@ -1187,5 +1601,11 @@ a:hover {
   }
   #commisson .commisson-text .header-text h3 span::after {
     top: 35px;
+  }
+  #windows-vps-header .header-text h3 span::after {
+    top: 48px;
+  }
+  #about-ecnhost .managed-service .header-text ul li {
+    font-size: 13px !important;
   }
 }

@@ -37,8 +37,9 @@ a:hover {
 .header-shape::after {
   left: 0;
   top: -40px;
-  width: 220px;
+  z-index: -1;
   content: "";
+  width: 220px;
   height: 175px;
   position: absolute;
   -webkit-transform: rotate(45deg);
@@ -51,7 +52,7 @@ a:hover {
 
 .header-shape::before {
   right: 0;
-  top: -45px;
+  top: -48px;
   width: 220px;
   content: "";
   height: 175px;
@@ -99,16 +100,21 @@ a:hover {
   font-size: 14px;
 }
 
-#contact-bar .lang-support-login .language .form-select .flag-icon {
-  width: 25px;
-  height: 16px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+#contact-bar .lang-support-login .language .dropdown {
+  border-radius: 8px;
 }
 
-#contact-bar .lang-support-login .language .form-select .flag-icon.flag-icon-us {
-  background: url(../images/usa-flag.png);
+#contact-bar .lang-support-login .language .dropdown .dropdown-toggle img {
+  border-radius: 8px;
+}
+
+#contact-bar .lang-support-login .language .dropdown .dropdown-toggle::after {
+  vertical-align: 0.1em;
+  border-top-color: #30ab5e;
+}
+
+#contact-bar .lang-support-login .language .dropdown .dropdown-menu {
+  z-index: 9999;
 }
 
 #contact-bar .lang-support-login #gender option[value="1"] {
@@ -143,6 +149,11 @@ a:hover {
 #menu-navbar .navbar-nav .nav-item .nav-link {
   color: #333333;
   font-size: 16px;
+}
+
+#menu-navbar .navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 #banner {
@@ -778,6 +789,7 @@ a:hover {
 
 #advanced-featues {
   padding: 120px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 #advanced-featues .advanced-featues-item {
@@ -791,6 +803,7 @@ a:hover {
 
 #providing-support {
   padding: 120px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 #providing-support .providing-support-text .header-text h3 {
@@ -1013,6 +1026,287 @@ a:hover {
   background-color: #30ab5e;
 }
 
+#windows-vps-header {
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(342deg, #ffffff 30%, rgba(48, 171, 94, 0.02) 30%);
+}
+
+#windows-vps {
+  padding: 70px 0;
+  background-color: #eaf8ef;
+  font-family: "Poppins", sans-serif;
+}
+
+#windows-vps .header-text h3 {
+  font-size: 35px;
+}
+
+#windows-vps .header-text h3 span::after {
+  top: 40px;
+}
+
+#windows-vps .storage-volume::after {
+  top: 0;
+  left: 50%;
+  height: 4px;
+  width: 100%;
+  content: "";
+  border-radius: 30px;
+  position: absolute;
+  background-color: #30ab5e;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#windows-vps .storage-volume .ram-slot {
+  color: #333333;
+}
+
+#windows-vps .storage-volume .ram-slot::after {
+  top: -19px;
+  left: 50%;
+  z-index: 1;
+  width: 2px;
+  height: 9px;
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  background-color: #4cd37f;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#windows-vps .storage-volume .ram-slot.active {
+  color: #333333;
+  background: transparent;
+}
+
+#windows-vps .storage-volume .ram-slot.active::after {
+  left: 50%;
+  top: -26px;
+  z-index: 1;
+  width: 24px;
+  content: "";
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid #caeed8;
+  background-color: #4cd37f;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#windows-vps .vps-accessories .vps-accessories-content .vps-accessories-item {
+  width: 160px;
+  height: 160px;
+  border-radius: 6px;
+}
+
+#windows-vps .vps-accessories .vps-accessories-content .vps-accessories-item p {
+  color: #30ab5e;
+}
+
+#windows-vps .vps-accessories .vps-accessories-content .vps-accessories-item h4 {
+  color: #000000;
+}
+
+#windows-vps .vps-manage .card {
+  border-radius: 6px;
+}
+
+#windows-vps .vps-manage .card .card-body h5 {
+  font-size: 36px;
+}
+
+#windows-vps .vps-manage .card .card-body a {
+  border-radius: 8px;
+  padding: 15px 35px;
+  background-color: #30ab5e;
+}
+
+#windows-vps .vps-manage .card .card-footer span {
+  font-size: 12px;
+}
+
+#windows-vps .vps-manage .card .card-footer ul li {
+  position: relative;
+}
+
+#windows-vps .vps-manage .card .card-footer ul li::after {
+  top: 45%;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #30ab5e;
+}
+
+#about-ecnhost {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(340deg, #ffffff 65%, rgba(48, 171, 94, 0.02) 50%);
+}
+
+#about-ecnhost .header-shape::after {
+  top: -85px;
+}
+
+#about-ecnhost .header-shape::before {
+  top: -95px;
+}
+
+#about-ecnhost .managed-service .header-text h3 {
+  font-size: 34px;
+}
+
+#about-ecnhost .managed-service .header-text h3 span::after {
+  top: 44px;
+}
+
+#about-ecnhost .managed-service .header-text ul li {
+  font-size: 13px;
+}
+
+#vision-mission {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+#vision-mission .vision-mission-text {
+  border-radius: 16px;
+}
+
+#vision-mission .vision-mission-text a {
+  color: #30ab5e;
+}
+
+#data-center {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+#data-center .header-shape::after {
+  top: -85px;
+}
+
+#data-center .header-shape::before {
+  top: -95px;
+}
+
+#terms-services {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+#terms-services .terms-services-content .header-text h3 {
+  font-size: 34px;
+}
+
+#terms-services .terms-services-content .header-text h3 span::after {
+  top: 40px;
+}
+
+#terms-services .terms-services-content .heading-terms-policy h3 {
+  font-size: 34px;
+}
+
+#terms-services .terms-services-content .heading-terms-policy .discription p {
+  color: #797979 !important;
+}
+
+#refund-policy {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+#refund-policy .refund-policy-content .header-text h3 {
+  font-size: 34px;
+}
+
+#refund-policy .refund-policy-content .header-text h3 span::after {
+  top: 40px;
+}
+
+#refund-policy .refund-policy-content .refund-delivery-services h3 {
+  font-size: 34px;
+}
+
+#refund-policy .refund-policy-content .refund-delivery-services .discription p {
+  font-size: 16px;
+  color: #797979 !important;
+}
+
+#refund-policy .refund-policy-content .refund-delivery-services .discription ul li {
+  color: #797979;
+  font-size: 16px;
+}
+
+#refund-policy .refund-policy-content .refund-delivery-services .discription ul li i {
+  height: 18px;
+  width: 18px;
+  font-size: 10px;
+  margin-top: 4px;
+  border-radius: 2px;
+  background-color: #30ab5e;
+}
+
+#privacy-policy {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+#privacy-policy .privacy .header-text h3 {
+  font-size: 34px;
+}
+
+#privacy-policy .privacy .header-text h3 span::after {
+  top: 45px;
+}
+
+#privacy-policy .privacy .privacy-content p {
+  color: #797979;
+  font-size: 16px;
+}
+
+#privacy-policy .privacy .privacy-content ul li {
+  color: #797979;
+  font-size: 16px;
+}
+
+#privacy-policy .privacy .privacy-content ul li i {
+  height: 18px;
+  width: 18px;
+  font-size: 10px;
+  margin-top: 4px;
+  border-radius: 2px;
+  background-color: #30ab5e;
+}
+
+#privacy-policy .heading-terms-policy h3 {
+  color: #333333;
+  font-size: 34px;
+}
+
+#privacy-policy .heading-terms-policy .discription p {
+  color: #797979;
+  font-size: 16px;
+}
+
+#privacy-policy .heading-terms-policy p {
+  color: #797979;
+  font-size: 16px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) {
   .header-shape::after {
@@ -1022,6 +1316,40 @@ a:hover {
   .header-shape::before {
     top: -115px;
     width: 100px;
+  }
+  .modal-backdrop.show {
+    z-index: 9;
+  }
+  .modal .modal-content {
+    height: 100vh;
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+  .modal.show .modal-dialog {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(80px, 0px);
+            transform: translate(80px, 0px);
+  }
+  .modal-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: 0 !important;
+  }
+  .user-login .btn {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+    background-color: #30ab5e;
+  }
+  .dropdown-toggle::after {
+    margin-left: 0;
   }
   .header-text h3 span::after {
     top: 35px;
@@ -1100,21 +1428,82 @@ a:hover {
   #commisson {
     padding: 50px 0;
   }
+  #windows-vps-header {
+    padding: 50px 0;
+  }
+  #windows-vps-header .header-text h3 span::after {
+    top: 48px;
+  }
+  #about-ecnhost {
+    padding: 50px 0;
+  }
+  #about-ecnhost .header-text h3 span::after {
+    top: 45px;
+  }
+  #about-ecnhost .header-shape::before {
+    top: -100px;
+  }
+  #about-ecnhost .header-shape::after {
+    top: -95px;
+  }
+  #data-center .header-text h3 span::after {
+    top: 40px;
+  }
+  #data-center .header-shape::before {
+    top: -105px;
+  }
+  #data-center .header-shape::after {
+    top: -105px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .header-shape::before {
-    top: -45px;
+    top: -45px !important;
     right: -32px;
     width: 100px;
     height: 75px;
   }
   .header-shape::after {
+    top: -45px !important;
     left: -30px;
-    top: -45px;
     width: 100px;
     height: 75px;
+  }
+  .modal-backdrop.show {
+    z-index: 9;
+  }
+  .modal .modal-content {
+    height: 100vh;
+  }
+  .modal-dialog {
+    max-width: 100%;
+  }
+  .modal.show .modal-dialog {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(80px, 0px);
+            transform: translate(80px, 0px);
+  }
+  .modal-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: 0 !important;
+  }
+  .user-login .btn {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+    background-color: #30ab5e;
+  }
+  .dropdown-toggle::after {
+    margin-left: 0;
   }
   #contact-bar .contact-bar-content .contact-bar-text {
     font-size: 12px;
@@ -1144,6 +1533,12 @@ a:hover {
   }
   #commisson .commisson-text .header-text h3 span::after {
     top: 35px;
+  }
+  #windows-vps-header .header-text h3 span::after {
+    top: 48px;
+  }
+  #about-ecnhost .managed-service .header-text ul li {
+    font-size: 13px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
